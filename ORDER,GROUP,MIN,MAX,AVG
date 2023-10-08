@@ -1,0 +1,17 @@
+Ordering the Data:
+
+SELECT title,release_year,rental_rate
+FROM film
+ORDER BY release_year ASC, rental_rate DESC
+
+GROUP BY: the average rental rate for each rating category.
+
+SELECT AVG (rental_rate),rating
+FROM film
+GROUP BY rating
+
+The Minimum and Maximum rental durations for each rating category.
+
+SELECT MIN (rental_duration), MAX(rental_duration), rating
+FROM film
+GROUP BY rating
